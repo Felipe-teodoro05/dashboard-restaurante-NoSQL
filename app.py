@@ -238,7 +238,7 @@ CHART_COLORS = [
 ]
 
 # URI de conexão MongoDB
-uri = "mongodb+srv://felipeteodoro:ceub1234@cluster0.pqdhxas.mongodb.net/"
+uri = st.secrets["MONGODB_URI"]
 db_name = "restaurante_reviews_db"
 
 try:
