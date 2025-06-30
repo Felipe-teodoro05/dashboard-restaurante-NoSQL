@@ -199,7 +199,7 @@ db.restaurantes.find({
 ## 👥 Equipe de Desenvolvimento
 
 - **Felipe Teodoro**
-- - **Lucas Wall**  
+- **Lucas Wall**  
 - **João Vitor**
 - **Mateo Wall**
 
