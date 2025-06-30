@@ -1,4 +1,4 @@
-# Food Journal 🍽️
+# Dashboard Ideal para Restaurantes NoSQL & Streamlit 🍽️
 
 Sistema de Avaliação de Restaurantes Online com MongoDB
 
@@ -58,7 +58,7 @@ O sistema utiliza um modelo orientado a documentos com as seguintes coleções p
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/food-journal.git
+git clone https://github.com/seu-usuario/dashboard-restaurante-NoSQL.git
 cd food-journal
 ```
 
@@ -74,7 +74,7 @@ mongod
 
 # Crie o banco de dados
 mongo
-use food_journal
+use dashboard-restaurante-NoSQL
 ```
 
 4. **Popule o banco de dados**
@@ -87,7 +87,7 @@ node populate_db.js
 Crie um arquivo `.env` na raiz do projeto:
 
 ```env
-MONGODB_URI=mongodb://localhost:27017/food_journal
+MONGODB_URI=mongodb://localhost:27017/dashboard-restaurante-NoSQL
 PORT=3000
 JWT_SECRET=seu_jwt_secret_aqui
 ```
@@ -199,8 +199,8 @@ db.restaurantes.find({
 ## 👥 Equipe de Desenvolvimento
 
 - **Felipe Teodoro**
+- - **Lucas Wall**  
 - **João Vitor**
-- **Lucas Wall**  
 - **Mateo Wall**
 
 ## 📄 Licença
