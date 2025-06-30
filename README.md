@@ -16,7 +16,7 @@ O **Food Journal** é um sistema completo de avaliação de restaurantes online 
 - 🏪 **Catálogo de Restaurantes**: Cadastro completo com cardápios e geolocalização
 - 🛒 **Sistema de Pedidos**: Criação, acompanhamento e histórico de pedidos
 - ⭐ **Avaliações**: Sistema de notas e comentários com fotos
-- 🔍 **Busca Avançada**: Filtros por localização, categoria, preço e preferências
+- 🔍 **Busca Avançada**: Filtros por localização, categoria, preços e preferências
 - 📱 **Notificações**: Comunicação em tempo real entre clientes e restaurantes
 - 📊 **Relatórios**: Dashboard com métricas de desempenho
 
