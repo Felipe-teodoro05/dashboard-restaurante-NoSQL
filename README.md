@@ -34,7 +34,7 @@ O sistema utiliza um modelo orientado a documentos com as seguintes coleções p
 ├── pedidos/          # Pedidos realizados
 ├── avaliacoes/       # Avaliações e comentários
 ├── notificacoes/     # Sistema de notificações
-├── mensagens/        # Chat cliente-restaurante
+├── mensagens/        # Chat cliente-restaurantes
 └── relatorios/       # Dados agregados
 ```
 
