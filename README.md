@@ -1,10 +1,43 @@
 # Dashboard Ideal para Restaurantes NoSQL & Streamlit 🍽️
 
-Sistema de Avaliação de Restaurantes Online com MongoDB
-
 [![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-green.svg)](https://mongodb.com)
 [![Node.js](https://img.shields.io/badge/Node.js-14+-blue.svg)](https://nodejs.org)
 [![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-red.svg)](https://dash-restaurante.streamlit.app)
+
+
+### Sistema de Avaliação de Restaurantes Online com MongoDB
+- Este projeto demonstra a construção de uma plataforma de dados ponta-a-ponta, simulando um ambiente como o do iFood, para resolver o desafio central de restaurantes: **entender o comportamento do cliente para otimizar operações e aumentar a receita**. Utilizando uma stack moderna com MongoDB, Python e Streamlit, a solução permite que gestores de restaurantes respondam a perguntas críticas de negócio em tempo real.
+
+## Principais conquistas
+- **Visão 360º do Cliente**: Centralização de pedidos, avaliações e perfis de usuários em um banco de dados NoSQL, permitindo análises complexas de padrões de consumo.
+
+- **Tomada de Decisão em Tempo Real**: Desenvolvimento de um dashboard interativo em Streamlit que traduz dados brutos em insights acionáveis, como identificação de pratos mais populares e horários de pico.
+
+- **Arquitetura Escalável**: Criação de uma base de dados robusta com MongoDB, projetada para suportar milhões de pedidos e consultas geoespaciais de baixa latência, essenciais para um serviço de delivery.
+
+## Problema de Negócio
+No competitivo mercado de food service, pequenos e médios restaurantes enfrentam grandes desafios:
+- **Falta de Visibilidade**: Dificuldade em entender quais pratos geram mais lucro, quais são os horários de maior movimento e qual o perfil do cliente mais fiel.
+- **Operações Ineficientes**: Alocação de equipe e estoque baseada em intuição, e não em dados, gerando custos desnecessários.
+- **Decisões Lentas**: A incapacidade de reagir rapidamente às tendências do mercado e ao feedback dos clientes.
+
+O Food Journal foi projetado para ser a central de inteligência de negócio que resolve exatamente esses problemas. 
+
+## 📈 Dashboard
+
+Acesse o dashboard interativo desenvolvido em Streamlit:
+
+🔗 **[Dashboard Food Journal](https://dash-restaurante.streamlit.app)**
+
+O dashboard apresenta métricas de pedidos em tempo real:
+- 📈 Identificar o Ticket Médio por Hora: Para criar promoções relâmpago em horários de baixo movimento.
+- 📍 Visualizar um Mapa de Calor de Pedidos: Para otimizar a logística de entrega e avaliar a abertura de novas filiais.
+- ⭐ Analisar a Correlação entre Avaliações e Pratos: Para destacar os pratos mais amados no cardápio e identificar aqueles que precisam de melhoria. 
+
+
+<details>
+<summary><strong>Clique para ver os Detalhes Técnicos, Arquitetura e Funcionalidades</strong></summary>
+<br>
 
 ## 📋 Sobre o Projeto
 
@@ -45,6 +78,11 @@ O sistema utiliza um modelo orientado a documentos com as seguintes coleções p
 - **Arrays de Subdocumentos**: Listas de itens relacionados
 - **Referências por ID**: Relações muitos-para-muitos
 - **Índices Estratégicos**: Otimização de consultas críticas
+
+</details>
+<details>
+<summary><strong>Clique para ver o Guia de Instalação e Configuração Local</strong></summary>
+<br>
 
 ## 🚀 Instalação e Configuração
 
@@ -109,6 +147,7 @@ node populate_db.js
 # Edite as variáveis no início do arquivo populate_db.js
 ```
 
+
 ## 🔍 Principais Índices
 
 ### Usuários
@@ -132,38 +171,6 @@ db.pedidos.createIndex({ numero_pedido: 1 }, { unique: true });
 db.pedidos.createIndex({ usuario_id: 1, data_hora_pedido: -1 });
 db.pedidos.createIndex({ restaurante_id: 1, status_pedido: 1 });
 ```
-
-## 📈 Dashboard
-
-Acesse o dashboard interativo desenvolvido em Streamlit:
-
-🔗 **[Dashboard Food Journal](https://dash-restaurante.streamlit.app)**
-
-O dashboard apresenta:
-- Métricas de pedidos em tempo real
-- Análise de performance por restaurante
-- Distribuição geográfica
-- Tendências de avaliações
-- Relatórios de faturamento
-
-## 📋 Requisitos do Sistema
-
-### Funcionais
-- ✅ Cadastro e autenticação de usuários
-- ✅ Gerenciamento de restaurantes e cardápios
-- ✅ Sistema completo de pedidos
-- ✅ Avaliações e comentários
-- ✅ Busca geoespacial
-- ✅ Notificações em tempo real
-- ✅ Relatórios gerenciais
-
-### Não-Funcionais
-- ✅ Escalabilidade para milhões de usuários
-- ✅ Alta disponibilidade (99.9% uptime)
-- ✅ Baixa latência (<200ms)
-- ✅ Conformidade com LGPD
-- ✅ Suporte a consultas geoespaciais
-- ✅ Resistência a picos de tráfego
 
 ## 🏃‍♂️ Como Usar
 
@@ -195,13 +202,12 @@ db.restaurantes.find({
   avaliacao_media: { $gte: 4.0 }
 }).sort({ avaliacao_media: -1 });
 ```
+</details>
 
 ## 👥 Equipe de Desenvolvimento
 
 - **Felipe Teodoro**
 - **Lucas Wall**  
-- **João Vitor**
-- **Mateo Wall**
 
 ## 📄 Licença
 
